@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Text Stuff-->
+    <style name="largetext" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="primarytext" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="secondarytext" parent="@android:style/TextAppearance.Small"/>
+
+</resources>
