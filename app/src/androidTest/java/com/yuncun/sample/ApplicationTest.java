@@ -1,4 +1,4 @@
-package com.yuncun.test;
+package com.yuncun.sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
