@@ -8,7 +8,8 @@ Download
 Gradle:
 
 ```groovy
-compile 'com.robinhood.spark:spark:1.1.2'
+compile 'com.yuncun.weekviewswipeable:weekviewswipeable:1.0.0'
+
 ```
 
 
