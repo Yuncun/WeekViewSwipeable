@@ -1,6 +1,13 @@
 # WeekViewSwipeable
-Custom android view for displaying weeks
+======
+WeekViewSwipeable is a simple Android view for displaying data in a weekly format. Given a list of data, the last element is bound to the current calendar day, the previous is bound to yesterday, and so forth. Simply override the adapter to customize the day circles based on your inter
 
+![](wvswipeablecrop.png)
+
+Useage
+--------
+
+Will be updated
 
 Download
 --------
