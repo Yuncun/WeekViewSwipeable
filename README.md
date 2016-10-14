@@ -68,6 +68,13 @@ compile 'com.yuncun.weekviewswipeable:weekviewswipeable:1.0.0'
 
 ```
 
+Credit
+--------
+
+My thanks to Pavlos-Petros Tournaris for his CircleView library
+
+https://github.com/pavlospt/CircleView  (Apache-2.0)
+
 License
 --------
 
