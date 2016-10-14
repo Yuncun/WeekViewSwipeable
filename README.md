@@ -22,50 +22,40 @@ Spark is setup with reasonable default values out of the box. Just add a `SparkV
         />
 ```
 
-Put your data into the `WeekViewAdapter`, and override the functions you need to customize.
+Put your data into the `WeekViewAdapter`, and override whichever functions you need to customize.
 
 ```java
+List<Boolean> data = Arrays.asList(true, false); //Example set; use your own List<T> here
 WeekViewSwipeable wvs = (WeekViewSwipeable) findViewById(R.id.calendar_component);
-    WeekViewAdapter<Boolean> adapter = new WeekViewAdapter(record) {
-        @Override
-        public int getStrokeColor(final int index){
-            if ((Boolean) get(index)==true){
-                return ContextCompat.getColor(context, R.color.teal);
-            } else {
-                return ContextCompat.getColor(context, R.color.grey_600);
-            }
-        }
+WeekViewAdapter<Boolean> adapter = new WeekViewAdapter(data) {
+    @Override
+    public int getStrokeColor(final int index){
+        //Override this to change circle stroke color
+    }
 
-        @Override
-        public int getFillColor(final int index){
-            if ((Boolean) get(index)==true){
-                return ContextCompat.getColor(context, R.color.teal);
-            } else {
-                return ContextCompat.getColor(context, R.color.grey_600);
-            }
-        }
+    @Override
+    public int getFillColor(final int index){
+        //Override to change circle fill color
+    }
 
-        @Override
-        public TextView getTextView(TextView tv, int index){
-            if ((Boolean) get(index)==true){
-                tv.setText("Hit");
-            } else {
-                tv.setText("Miss");
-            }
-            return tv;
-        }
+    @Override
+    public TextView getTextView(TextView tv, int index){
+        //Gives you access to TextView
+        return tv;
+    }
+    
+    @Override
+    public CircleView getCircleView(CircleView cv, int index){
+        //Gives you access to CircleView
+        return cv;
+    }
 
-        @Override
-        public View getDayLayout(View dv, final int index){
-            dv.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Toast.makeText(view.getContext(), "Click! on index " + index, Toast.LENGTH_LONG).show();
-                }
-            });
-            return dv;
-        }
-    };
+    @Override
+    public View getDayLayout(View dv, final int index){
+        //Returns entire dayview. This could be useful for setting an onclicklistener, for example
+        return dv;
+    }
+};
 wvs.setAdapter(adapter);
 ```
 Download
