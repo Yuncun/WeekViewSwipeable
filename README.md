@@ -7,8 +7,6 @@ WeekViewSwipeable is a simple Android view for displaying data in a weekly forma
 Usage
 -----
 
-Spark is setup with reasonable default values out of the box. Just add a `SparkView` to your layout:
-
 ```xml
     <com.yuncun.swipeableweekview.WeekViewSwipeable
         android:id="@+id/calendar_component"
