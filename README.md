@@ -10,7 +10,6 @@ Usage
 ```xml
     <com.yuncun.swipeableweekview.WeekViewSwipeable
         android:id="@+id/calendar_component"
-        android:layout_below="@id/helloworld"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
